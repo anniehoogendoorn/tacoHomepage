@@ -109,30 +109,39 @@ body {
   padding-left: 12px;
 }
 
-.nasa-text {
+.horoscope-text {
+  z-index: -4;
+  opacity: 0;
+}
+
+.taco-sweeper-text {
   z-index: -3;
   opacity: 0;
 }
 
-.illustration-text {
+.pacman-text {
   z-index: -2;
   opacity: 0;
 }
 
-.travel-text {
+.tacowars-text {
   z-index: -1;
   opacity: 0;
 }
 
-.nasa-text.show {
+.horoscope-text.show {
   opacity: 1;
 }
 
-.travel-text.show {
+.taco-sweeper-text.show {
   opacity: 1;
 }
 
-.illustration-text.show {
+.pacman-text.show {
+  opacity:1;
+}
+
+.tacowars-text.show {
   opacity: 1;
 }
 
