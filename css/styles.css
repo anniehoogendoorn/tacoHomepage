@@ -1,6 +1,7 @@
 body {
   padding-top: 60px;
-  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Allerta Stencil', sans-serif;
+  /*font-family: 'Press Start 2P', cursive;*/
   background-color: #FFF7E2;
 }
 
@@ -106,7 +107,7 @@ a, navbar {
 
 
 .white-text {
-  color: white;
+  color: #FFF7E2;
 }
 
 #banner-col {
@@ -167,10 +168,10 @@ a, navbar {
 
 
 .banner-btn {
-  color: #fff;
+  color: #FFF7E2;
   /*font-weight: bold;*/
   font-size: 24px;
-  background-color: transparent;
+  background-color: rgba(1,1,1,0.1);
   /*display: inline-block;*/
   min-width: 140px;
   margin-bottom: 10px;
@@ -178,9 +179,11 @@ a, navbar {
   border-radius: 5px;
   text-shadow: 0 -1px transparent;
   padding: 21px 25px;
+  border-color: #B52417;
 }
 
 .banner-btn:hover {
-  /*background-color: rgba(1,1,1,0.2);*/
-  color: rgba(1,1,1,1);
+  background-color: rgba(1,1,1,0.2);
+  border-color: #FF921C;
+  color: #FFF7E2;
 }

@@ -18,7 +18,7 @@ dailyTaco.controller('BannerCtrl', function BannerCtrl($scope) {
         $imageEls.eq(index - 1).removeClass('show');
         $pEls.eq(index - 1).removeClass('show');
 
-      },6000);
+      },9000);
     };
 
     angular.element(document).ready(function () {
