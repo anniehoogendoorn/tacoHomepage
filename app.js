@@ -9,10 +9,10 @@ dailyTaco.config(function($stateProvider) {
         templateUrl: 'partials/home.html',
         controller: 'BannerCtrl'
       },
-      // 'showcase': {
-      //   templateUrl: 'partials/showcase.html',
-      //   controller: 'ShowcaseCtrl'
-      // },
+      'showcase': {
+        templateUrl: 'partials/showcase.html',
+        controller: 'ShowcaseCtrl'
+      },
       'footer': { templateUrl: 'partials/footer.html'}
     }
   });
