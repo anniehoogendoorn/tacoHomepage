@@ -1,0 +1,163 @@
+body {
+  padding-top: 60px;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/*======HEADER STUFF==========*/
+.collapse {
+  float: right;
+}
+
+.header-login-btn, .header-signup-btn {
+  border: 0;
+  background-color: transparent;
+}
+
+.header-login-btn:hover, .header-signup-btn:hover {
+  color: #4e5763;
+}
+
+.navbar {
+  border: 0px;
+}
+
+
+
+/*======BANNER STUFF==========*/
+.banner-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*padding-top: 100px;*/
+}
+
+.toggle-image {
+  position: absolute;
+  width: 100%;
+  top: 70;
+  left: 0;
+  height: 600px;
+  transition: opacity 2.5s ease-in-out;
+  /*padding-top: 100px;*/
+}
+
+
+/* banner bg images for transition */
+.bg-horoscope{
+  background-image: url("../images/taco-holder3.jpeg");
+  z-index: -4;
+  opacity: 0;
+}
+
+.bg-taco-sweeper{
+  background-image: url("../images/taco-holder4.jpeg");
+  z-index: -3;
+  opacity: 0;
+}
+
+.bg-pacman {
+  background-image: url("../images/taco-holder2.jpeg");
+  z-index: -2;
+  opacity: 0;
+}
+
+.bg-tacowars {
+  background-image: url("../images/taco-holder1.jpeg");
+  z-index: -1;
+  opacity: 0;
+}
+
+
+.bg-horoscope.show {
+  opacity: 1;
+}
+
+.bg-taco-sweeper.show {
+  opacity: 1;
+}
+
+.bg-pacman.show {
+  opacity: 1;
+}
+
+.bg-tacowars.show {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.white-text {
+  color: white;
+}
+
+#banner-col {
+  height: 600px;
+}
+
+.banner-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transition: opacity 2.5s ease-in-out;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.nasa-text {
+  z-index: -3;
+  opacity: 0;
+}
+
+.illustration-text {
+  z-index: -2;
+  opacity: 0;
+}
+
+.travel-text {
+  z-index: -1;
+  opacity: 0;
+}
+
+.nasa-text.show {
+  opacity: 1;
+}
+
+.travel-text.show {
+  opacity: 1;
+}
+
+.illustration-text.show {
+  opacity: 1;
+}
+
+
+
+.subheader-text {
+  font-size: 20px;
+}
+
+
+.banner-btn {
+  color: #fff;
+  /*font-weight: bold;*/
+  font-size: 24px;
+  background-color: transparent;
+  /*display: inline-block;*/
+  min-width: 140px;
+  margin-bottom: 10px;
+  border-width: 2px;
+  border-radius: 5px;
+  text-shadow: 0 -1px transparent;
+  padding: 21px 25px;
+}
+
+.banner-btn:hover {
+  /*background-color: rgba(1,1,1,0.2);*/
+  color: rgba(1,1,1,1);
+}
