@@ -185,7 +185,7 @@ a, navbar {
 
 .banner-btn:hover {
   background-color: rgba(1,1,1,0.2);
-  border-color: #FF921C;
+  border-color: AAD049
   color: #FFF7E2;
 }
 
@@ -211,15 +211,19 @@ a, navbar {
 }
 
 .flex-item {
-  background: tomato;
+  background: #AAD049;
   padding: 5px;
   width: 200px;
   height: 150px;
   margin-top: 10px;
+  border: 8px solid #B52417;
 
   line-height: 150px;
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 20px;
   text-align: center;
 }
+
+
+/*======FOOTER STUFF==========*/
