@@ -9,6 +9,9 @@ dailyTaco.config(function($stateProvider) {
         templateUrl: 'partials/home.html',
         controller: 'BannerCtrl'
       },
+      // 'game': {
+      //   templateUrl: 'partials/game.html'},
+
       'showcase': {
         templateUrl: 'partials/showcase.html',
         controller: 'ShowcaseCtrl'
