@@ -1,9 +1,15 @@
 
 body {
   padding-top: 60px;
+  padding-bottom: 60px;
   font-family: 'Allerta Stencil', sans-serif;
   /*font-family: 'Press Start 2P', cursive;*/
   background-color: #FFF7E2;
+}
+
+.bg-gradient {
+
+
 }
 
 
@@ -41,12 +47,33 @@ a, navbar {
 
 
 /*======BANNER STUFF==========*/
+#home-banner {
+  height:600px;
+  z-index: 1;
+}
+
+/*#bg-gradient {
+  position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -75px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  background-image: linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 65%);
+}*/
+
+
 .banner-bg {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   /*padding-top: 100px;*/
+  /*background-image: linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 65%);*/
+
 }
+
+
 
 .toggle-image {
   position: absolute;
@@ -55,8 +82,11 @@ a, navbar {
   left: 0;
   height: 600px;
   transition: opacity 1s ease-in-out;
+
   /*padding-top: 100px;*/
 }
+
+
 
 
 /* banner bg images for transition */
@@ -64,6 +94,7 @@ a, navbar {
   background-image: url("../images/taco-holder3.jpeg");
   z-index: -4;
   opacity: 0;
+
 }
 
 .bg-taco-sweeper{
@@ -84,6 +115,9 @@ a, navbar {
   opacity: 0;
 }
 
+.bg-gradient {
+}
+
 
 .bg-horoscope.show {
   opacity: 1;
@@ -101,7 +135,7 @@ a, navbar {
   opacity: 1;
 }
 
-
+/*background-image: linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 65%);*/
 
 
 
@@ -112,7 +146,8 @@ a, navbar {
 }
 
 #banner-col {
-  height: 600px;
+  height: 425px;
+  margin-top: 150px;
 }
 
 .banner-text {
@@ -194,6 +229,10 @@ a, navbar {
 /*======SHOWCASE STUFF==========*/
 
 @import "compass/css3";
+
+#showcase {
+  margin-top: 50px;
+}
 
 .flex-container {
   padding: 0;
