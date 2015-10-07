@@ -91,26 +91,49 @@ a, navbar {
 
 /* banner bg images for transition */
 .bg-horoscope{
-  background-image: url("../images/taco-holder3.jpeg");
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, .8)), to(rgba(0, 0, 0, 0.1))), url("../images/taco-holder3.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   z-index: -4;
   opacity: 0;
 
 }
 
 .bg-taco-sweeper{
-  background-image: url("../images/taco-holder4.jpeg");
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, .8)), to(rgba(0, 0, 0, 0.1))), url("../images/taco-holder4.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
   z-index: -3;
   opacity: 0;
 }
 
 .bg-pacman {
-  background-image: url("../images/taco-holder2.jpeg");
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, .8)), to(rgba(0, 0, 0, 0.1))), url("../images/taco-holder2.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
   z-index: -2;
   opacity: 0;
 }
 
 .bg-tacowars {
-  background-image: url("../images/taco-holder1.jpeg");
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, .8)), to(rgba(0, 0, 0, 0.1))), url("../images/taco-holder1.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
   z-index: -1;
   opacity: 0;
 }
@@ -141,9 +164,6 @@ a, navbar {
 
 
 
-.white-text {
-  color: #FFF7E2;
-}
 
 #banner-col {
   height: 425px;
@@ -197,9 +217,14 @@ a, navbar {
 }
 
 
+.white-text {
+  color: #FFF7E2;
+  margin-bottom: 10px;
+}
 
 .subheader-text {
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 
@@ -211,16 +236,17 @@ a, navbar {
   /*display: inline-block;*/
   min-width: 140px;
   margin-bottom: 10px;
+  margin-right: 15px;
   border-width: 2px;
   border-radius: 5px;
   text-shadow: 0 -1px transparent;
-  padding: 21px 25px;
+  padding: 10px 15px;
   border-color: #B52417;
 }
 
 .banner-btn:hover {
-  background-color: rgba(1,1,1,0.2);
-  border-color: AAD049
+  background-color: rgba(1,1,1,0.3);
+  border-color: #AAD049;
   color: #FFF7E2;
 }
 
@@ -231,7 +257,8 @@ a, navbar {
 @import "compass/css3";
 
 #showcase {
-  margin-top: 50px;
+  margin-top: 60px;
+  margin-bottom: 80px;
 }
 
 .flex-container {
@@ -266,3 +293,15 @@ a, navbar {
 
 
 /*======FOOTER STUFF==========*/
+.custom-footer {
+  width: 100%;
+  height: 30px;
+  /*position: bottom-fixed;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -80px;
+  /*bottom:0;*/
+  /*left: 0;*/
+    vertical-align: baseline;
+  background: #FF921C;
+}
