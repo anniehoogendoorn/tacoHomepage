@@ -3,7 +3,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   font-family: 'Allerta Stencil', sans-serif;
-  /*font-family: 'Press Start 2P', cursive;*/
   background-color: #FFF7E2;
 }
 
@@ -249,6 +248,17 @@ a, navbar {
   border-color: #AAD049;
   color: #FFF7E2;
 }
+
+/*======Game-1 TacoSweeper==========*/
+
+#game-1 {
+  margin-top:25px;
+  height: 200px;
+  background-color: #FFE296;
+  /*margin: auto;*/
+}
+
+
 
 
 

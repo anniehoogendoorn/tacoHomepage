@@ -4,19 +4,33 @@ dailyTaco.config(function($stateProvider) {
   $stateProvider.state('home', {
     url: '',
     views: {
-      'header': { templateUrl: 'partials/header.html' },
+      'header': {
+        templateUrl: 'partials/header.html'
+      },
+
+
       'body':   {
         templateUrl: 'partials/home.html',
         controller: 'BannerCtrl'
       },
-      // 'game': {
-      //   templateUrl: 'partials/game.html'},
+
+
+      'game-1': {
+        templateUrl: 'games/Tacosweeper/index.html',
+        controller: 'TacosweeperCtrl'
+      },
+
 
       'showcase': {
         templateUrl: 'partials/showcase.html',
         controller: 'ShowcaseCtrl'
       },
-      'footer': { templateUrl: 'partials/footer.html'}
+
+
+      'footer': {
+        templateUrl: 'partials/footer.html'
+      }
+      
     }
   });
 

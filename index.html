@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- TacoSweeper -->
+    <script src="games/Tacosweeper/app.js"></script>
+    <script src="games/Tacosweeper/controllers/TacosweeperController.js"></script>
+    <script src="games/Tacosweeper/directives/myDirectives.js"></script>
+    <link rel="stylesheet" href="games/Tacosweeper/css/styles.css">
+
     <!-- <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'> -->
     <link href='https://fonts.googleapis.com/css?family=Allerta+Stencil' rel='stylesheet' type='text/css'>
@@ -26,9 +32,10 @@
 
       <div ui-view="header"></div>
       <div ui-view="body"></div>
-      <div ui-view="game1"></div>
+      <div ui-view="game-1"></div>
       <div ui-view="showcase"></div>
     </div>
+
       <div ui-view="footer"></div>
   </body>
 </html>
