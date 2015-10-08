@@ -16,7 +16,7 @@ dailyTaco.config(function($stateProvider) {
 
 
       'game-1': {
-        templateUrl: 'games/Tacosweeper/index.html',
+        templateUrl: 'partials/game1.html',
         controller: 'TacosweeperCtrl'
       },
 
@@ -30,7 +30,7 @@ dailyTaco.config(function($stateProvider) {
       'footer': {
         templateUrl: 'partials/footer.html'
       }
-      
+
     }
   });
 

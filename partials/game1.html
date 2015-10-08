@@ -1,0 +1,42 @@
+<br><br>
+<section id="game1">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Trump Sweeper</h1>
+        <h3 ng-if="isWinMessageVisible">You Won!</h3>
+        <h3 ng-if="isLostMessageVisible">You've Lost!</h3>
+        <table border="1" class="tacofield">
+          <tr ng-repeat="row in tacofield.rows">
+            <td ng-repeat="spot in row.spots" ng-click="uncoverSpot(spot)" ng-right-click="flag(spot)">
+              <img class="square" ng-if="spot.isFlagged && spot.isCovered" src="images/game1/images/taco.png">
+              <img class="square" ng-if="spot.isCovered && !spot.isFlagged" src="images/game1/images/covered.png">
+              <img class="square" ng-if="!spot.isCovered  && spot.content == 'empty' " src="images/game1/images/empty.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 'clicked bomb' " src="images/game1/images/red-trump.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 'bomb' " src="images/game1/images/trump-gray.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 1" src="images/game1/images/number-1.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 2" src="images/game1/images/number-2.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 3" src="images/game1/images/number-3.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 4" src="images/game1/images/number-4.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 5" src="images/game1/images/number-5.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 6" src="images/game1/images/number-6.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 7" src="images/game1/images/number-7.png">
+              <img class="square" ng-if="!spot.isCovered && spot.content == 8" src="images/game1/images/number-8.png">
+            </td>
+          </tr>
+        </table>
+        <form ng-submit="newGame()"role="form">
+          <div class="form-group">
+            <h4>Number of Rows:</h4>
+            <input type="number" ng-model="rowNum" class="form-inline" placeholder="9" required>
+          </div>
+          <div class="form-group">
+            <h4>Number of Bombs:</h4>
+            <input type="number" ng-model="bombNum" class="form-inline" placeholder="10" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Start New Game</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -251,10 +251,11 @@ a, navbar {
 
 /*======Game-1 TacoSweeper==========*/
 
-#game-1 {
-  margin-top:25px;
+#game1 {
+  margin-top:60px;
+  margin-bottom: 40px;
   height: 200px;
-  background-color: #FFE296;
+  /*background-color: #FFE296;*/
   /*margin: auto;*/
 }
 
