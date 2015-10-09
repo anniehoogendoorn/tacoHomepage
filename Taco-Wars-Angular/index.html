@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="tacoWars">
+  <head>
+    <title>Taco Wars!</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="lib/jquery-1.11.3.js"></script>
+    <script src="app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="controllers/GamesController.js"></script>
+    <script src="controllers/TacoController.js"></script>
+    <script src="services/TacosFactory.js"></script>
+    <script src="services/UtilitiesFactory.js"></script>
+    <script src="directives/myDirectives.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div ui-view></div>
+    </div>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 <br><br>
-<section id="game1" ng-show="GamesFactory.showmeSweeper==true">
+<section id="game1" ng-show="GamesFactory.showmeSweeper=true">
 <div class="container">
   <div class="row">
     <div class="col-md-12 game1">
@@ -36,7 +36,7 @@
           </div>
           <button class="btn btn-primary" type="submit">Start New Game</button>
         </form>
-        <a ng-click="GamesFactory.showmeSweeper=false"><h2>X</h2></a>
+        <a ui-sref="home"><h2>X</h2></a>
       </div>
     </div>
   </div>

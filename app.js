@@ -22,31 +22,52 @@ dailyTaco.config(function($stateProvider) {
     }
   });
 
-  $stateProvider.state('home.game1', {
+  $stateProvider.state('game1', {
     url: '/game1',
     views: {
-      'currentgame': {
+      'header': {
+      templateUrl: 'partials/header.html'
+      },
+      'body': {
         templateUrl: 'partials/game1.html',
         controller: "TacosweeperCtrl"
+      },
+      'showcase': {
+        templateUrl: 'partials/showcase.html',
+        controller: 'ShowcaseCtrl'
       }
     }
   });
 
-  $stateProvider.state('home.game2home', {
+  $stateProvider.state('game2home', {
     url: '/game2home',
     views: {
-      'currentgame': {
+      'header': {
+      templateUrl: 'partials/header.html'
+      },
+      'body': {
         templateUrl: 'partials/game2/home.html'
+      },
+      'showcase': {
+        templateUrl: 'partials/showcase.html',
+        controller: 'ShowcaseCtrl'
       }
     }
   });
 
-  $stateProvider.state('home.game2game', {
+  $stateProvider.state('game2game', {
     url: '/game2game',
     views: {
-      'currentgame': {
+      'header': {
+      templateUrl: 'partials/header.html'
+      },
+      'body': {
         templateUrl: 'partials/game2/game.html',
         controller: 'GamesCtrl'
+      },
+      'showcase': {
+        templateUrl: 'partials/showcase.html',
+        controller: 'ShowcaseCtrl'
       }
     }
   });
