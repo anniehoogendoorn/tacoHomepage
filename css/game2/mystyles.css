@@ -1,6 +1,10 @@
 body {
-    background-image: url("../../images/game2/space.png");
-
+  background-color: #FFF7E2;
+    /*background-image: url("../../images/game2/space.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
 }
 
 .row {

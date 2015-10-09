@@ -87,3 +87,29 @@ dailyTaco.directive("universityBg", function() {
     });
   }
 });
+
+dailyTaco.directive("spaceBg", function() {
+  return function (scope, element, attrs) {
+    element.bind("click", function() {
+      var body = angular.element(document).find('body');
+      body.css({
+        'background-image': 'url("images/game2/space.png")',
+        '-webkit-background-size': 'cover',
+        '-moz-background-size': 'cover',
+        '-o-background-size': 'cover',
+        'background-size': 'cover'
+      });
+    });
+  }
+});
+
+dailyTaco.directive("colorBg", function() {
+  return function (scope, element, attrs) {
+    element.bind("click", function() {
+      var body = angular.element(document).find('body');
+      body.css({
+        'background-image': 'none'
+      });
+    });
+  }
+});
