@@ -1,8 +1,10 @@
-dailyTaco.controller('TacosweeperCtrl', function TacosweeperCtrl($scope) {
+dailyTaco.controller('TacosweeperCtrl', function TacosweeperCtrl($scope, GamesFactory) {
   $scope.rowNum = 9;
   $scope.bombNum = 10;
   $scope.tacofield = createTacofield();
   $scope.emptySpots = [];
+  $scope.showmeSweeper=GamesFactory.showmeSweeper;
+  $scope.GamesFactory = GamesFactory;
 
   $scope.uncoverSpot = function(spot) {
     spot.isCovered = false;

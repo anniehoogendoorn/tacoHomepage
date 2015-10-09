@@ -1,9 +1,12 @@
+
+<div ui-view="currentgame"></div>
+
 <section id="showcase">
   <div class = "container">
     <h2 class="showcase-title" show-overlay>La Vida Taquera.</h2>
 
     <ul class="flex-container">
-      <li class="flex-item">Taco Sweeper</li>
+      <a ui-sref="home.game1" ng-click="GamesFactory.showmeSweeper=true"><li class="flex-item" >Taco Sweeper</li></a>
       <li class="flex-item">Taco Cowboy</li>
       <li class="flex-item">Taco Wars</li>
       <li class="flex-item">r/tacos</li>
