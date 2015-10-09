@@ -46,6 +46,7 @@ a, navbar {
 
 #cowboy {
   width: 155px;
+  pull: right;
 
 }
 
