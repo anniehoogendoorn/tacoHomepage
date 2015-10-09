@@ -32,14 +32,24 @@ dailyTaco.config(function($stateProvider) {
     }
   });
 
-  // $stateProvider.state('home.game2', {
-  //   url: '/game2',
-  //   views: {
-  //     'currentgame': {
-  //       templateUrl: 'partials/game2.html'
-  //     }
-  //   }
-  // });
+  $stateProvider.state('home.game2home', {
+    url: '/game2home',
+    views: {
+      'currentgame': {
+        templateUrl: 'partials/game2/home.html'
+      }
+    }
+  });
+
+  $stateProvider.state('home.game2game', {
+    url: '/game2game',
+    views: {
+      'currentgame': {
+        templateUrl: 'partials/game2/game.html',
+        controller: 'GamesCtrl'
+      }
+    }
+  });
 
 
 

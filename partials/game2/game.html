@@ -1,0 +1,130 @@
+
+<br> <br> <br> <br>
+<section id="game2" ng-show="GamesFactory.showmeWars==true">
+<div class="row">
+  <div class="col-lg-4">
+    <h1 id="banner-hero">THE HERO</h1>
+    <img id="banner" src="images/game2/cowboy_sunset.png">
+  </div>
+
+  <div class ="col-lg-4 header">
+    <img id="banner" src="images/game2/taco-wars.jpg">
+    <button class="btn btn-info" ng-click="newGame()">New Game</button>
+  </div>
+
+  <div class="col-lg-4">
+    <h1 id="banner-villain">THE VILLIAN</h1>
+    <img id="banner" src="images/game2/trump.png">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 available">
+    <h1> <center> TACOS AVAILABLE </h1>
+    <ul id="bulletless">
+      <li ng-repeat="taco in currentDayInventory track by $index">
+        <a ng-click="showBuy = ! showBuy">
+          <strong>{{ taco.tacoType }}</strong>  <i>${{ taco.currentPrice }}</i></a>
+        <div class="buy-tacos" ng-show="showBuy">
+          <p>How many {{ taco.tacoType }} would you like to buy?  </p>
+          <form ng-submit="buyTacos(taco, quantity)">
+            <input type="number" name="quantity" ng-model="quantity" placeholder="input a number" required>
+            <button type="submit" class="btn btn-success" ng-click="showBuy = ! showBuy">Buy</button>
+          </form>
+          <button class="btn btn-danger" ng-click="showBuy = ! showBuy">Cancel</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-4  col-md-4 col-sm-4 col-xs-4 inventory">
+    <h1><center>  TACO INVENTORY  </h1>
+    <ul id="bulletless">
+      <li ng-repeat="taco in playerInventory track by $index">
+        <a ng-click="showSell = ! showSell">
+        <strong>{{ taco.tacoType }}</strong> <i>qty: {{ taco.tacoQuantity }} @ ${{ taco.tacoPrice }}</i></a>
+        <div class="sell-tacos" ng-show="showSell">
+          <p>How many {{ taco.tacoType }} would you like to sell?  </p>
+          <form ng-submit="sellTacos(taco, quantity)">
+            <input type="number" name="quantity" ng-model="quantity" placeholder="input a number" required>
+            <button type="submit" class="btn btn-success" ng-click="showSell = ! showSell">Sell</button>
+          </form>
+          <button class="btn btn-danger" ng-click="showSell = ! showSell">Cancel</button>
+        </div>
+      </li>
+  </ul>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 stats">
+    <h1> GAME STATS  </h1>
+    <ul>
+      <li><strong>Cash</strong> <i>${{ cash }}</i></li>
+      <li><strong>Bank</strong> <i>${{ bank }}</i></li>
+      <li><strong>Loan Amount</strong> <i>${{ loan }}</i></li>
+      <li><strong>Day</strong> <i>{{ dayCount }}</i></li>
+    </ul>
+
+      <button type="button" class="btn btn-default btn-xs" ng-click="showDeposit = ! showDeposit">Deposit Cash</button>
+      <button type="button" class="btn btn-default btn-xs" ng-click="showWithdraw = ! showWithdraw">Withdraw Cash</button>
+      <button type="button" class="btn btn-default btn-xs" ng-click="showPayoff = ! showPayoff">Payoff Loan</button>
+      <button type="button" class="btn btn-default btn-xs" ng-click="showLoan = ! showLoan">Get a Loan</button>
+
+
+    <div class="deposit" ng-show="showDeposit">
+      <p> <center> How much would you like to deposit?</p>
+      <form ng-submit="depositToBank(depositAmount)">
+        <input type="number" name="depositAmount" ng-model="depositAmount" placeholder="input a number" required>
+        <button type="button" class="btn btn-success btn-xs" type="submit" class="btn btn-default" ng-click="showDeposit = ! showDeposit">Deposit</button>
+      </form>
+      <button type="button" class="btn btn-danger btn-xs" ng-click="showDeposit = ! showDeposit">Cancel</button>
+    </div>
+
+    <div class="withdraw" ng-show="showWithdraw">
+      <p><center>How much would you like to withdraw?</p>
+      <form ng-submit="withdrawFromBank(withdrawAmount)">
+        <input type="number" name="withdrawAmount" ng-model="withdrawAmount" placeholder="input a number" required>
+        <button type="submit" class="btn btn-success btn-xs" ng-click="showWithdraw = ! showWithdraw">Withdraw</button>
+      </form>
+      <button type="button" class="btn btn-danger btn-xs" ng-click="showWithdraw = ! showWithdraw">Cancel</button>
+    </div>
+
+    <div class="payoff" ng-show="showPayoff">
+      <p> <center> How much would you like to pay?</p>
+      <form ng-submit="payOffLoan(payAmount)">
+        <input type="number" name="payAmount" ng-model="payAmount" placeholder="input a number" required>
+        <button type="submit" class="btn btn-success btn-xs" ng-click="showPayoff = ! showPayoff">Pay</button>
+      </form>
+      <button type="button" class="btn btn-danger btn-xs" ng-click="showPayoff = ! showPayoff">Cancel</button>
+    </div>
+
+
+    <div class="loan" ng-show="showLoan">
+      <p><center>How much would you like to take as a loan?</p>
+      <form ng-submit="takeMoreLoan(loanAmount)">
+        <input type="number" name="loanAmount" ng-model="loanAmount" placeholder="input a number" required>
+        <button type="submit" class="btn btn-success btn-xs" ng-click="showLoan = ! showLoan">Take</button>
+      </form>
+      <button type="button" class="btn btn-danger btn-xs" ng-click="showLoan = ! showLoan"> Cancel</button>
+    </div>
+
+  </div>
+</div>
+<div class="row">
+
+  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 gamelog">
+    <h1><center>  GAME LOG </h1>
+    <p ng-if="dayEvent"> {{ dayEvent }} </p>
+    <a ng-click="GamesFactory.showmeWars=false"><p>Exit Game</p></a>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 locations">
+    <h1> <center> LOCATIONS   </h1>
+      <button type="button" class="btn btn-default btn-sm" ng-click="nextDay()" downtown-bg>Downtown </button><br>
+      <button type="button" class="btn btn-success btn-sm" ng-click="nextDay()" stadium-bg>Stadium</button><br>
+      <button type="button" class="btn btn-info btn-sm" ng-click="nextDay()" beach-bg>Beach</button><br>
+      <button type="button" class="btn btn-primary btn-sm" ng-click="nextDay()" lake-bg>Lake</button><br>
+      <button type="button" class="btn btn-danger btn-sm" ng-click="nextDay()" cemetery-bg>Cemetery</button><br>
+      <button type="button" class="btn btn-warning btn-sm" ng-click="nextDay()" university-bg>University</button><br>
+  </div>
+</div>
+<br>
+</section>
