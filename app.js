@@ -72,6 +72,23 @@ dailyTaco.config(function($stateProvider) {
     }
   });
 
+  $stateProvider.state('dino', {
+    url: '/dino',
+    views: {
+      'header': {
+      templateUrl: 'partials/header.html'
+      },
+      'body': {
+        templateUrl: 'partials/dude_n_dino.html',
+      },
+      'showcase': {
+        templateUrl: 'partials/showcase.html',
+        controller: 'ShowcaseCtrl'
+      }
+    }
+  });
+
+
 
 
   // Other states here
