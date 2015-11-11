@@ -6,12 +6,6 @@ body {
   background-color: #FFF7E2;
 }
 
-.bg-gradient {
-
-
-}
-
-
 /*======HEADER STUFF==========*/
 .collapse {
   float: right;
@@ -164,13 +158,6 @@ a, navbar {
   opacity: 1;
 }
 
-/*background-image: linear-gradient(to right,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 65%);*/
-
-
-
-
-
-
 #banner-col {
   height: 425px;
   margin-top: 150px;
@@ -222,7 +209,6 @@ a, navbar {
   opacity: 1;
 }
 
-
 .white-text {
   color: #FFF7E2;
   margin-bottom: 10px;
@@ -233,13 +219,10 @@ a, navbar {
   margin-bottom: 15px;
 }
 
-
 .banner-btn {
   color: #FFF7E2;
-  /*font-weight: bold;*/
   font-size: 24px;
   background-color: rgba(1,1,1,0.1);
-  /*display: inline-block;*/
   min-width: 140px;
   margin-bottom: 10px;
   margin-right: 15px;
@@ -256,19 +239,17 @@ a, navbar {
   color: #FFF7E2;
 }
 
+.banner-btn:visited {
+    color: #FFF7E2;
+}
+
 /*======Game-1 TacoSweeper==========*/
 
 #game1 {
   margin-top:60px;
   margin-bottom: 40px;
   height: 200px;
-  /*background-color: #FFE296;*/
-  /*margin: auto;*/
 }
-
-
-
-
 
 /*======SHOWCASE STUFF==========*/
 
@@ -283,43 +264,23 @@ a, navbar {
   padding: 0;
   margin: 0;
   list-style: none;
-
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .flex-item {
   background: #AAD049;
-  padding: 5px;
-  width: 200px;
+  width: 250px;
   height: 150px;
-  margin-top: 10px;
-  border: 8px solid #B52417;
-
+  margin-top: 15px;
   line-height: 150px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
-}
-
-
-/*======FOOTER STUFF==========*/
-.custom-footer {
-  width: 100%;
-  height: 30px;
-  /*position: bottom-fixed;*/
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -80px;
-  /*bottom:0;*/
-  /*left: 0;*/
-    vertical-align: baseline;
-  background: #FF921C;
 }
